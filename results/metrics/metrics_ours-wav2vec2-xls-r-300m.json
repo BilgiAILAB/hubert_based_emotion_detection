@@ -1,0 +1,38 @@
+{
+  "tag": "ours-wav2vec2-xls-r-300m",
+  "train_source": "ours",
+  "base_model": "facebook/wav2vec2-xls-r-300m",
+  "train_size": 1462,
+  "test_ours": {
+    "uar": 0.8942307692307693,
+    "f1_macro": 0.8957219251336899,
+    "accuracy": 0.8974358974358975,
+    "confusion": [
+      [
+        60,
+        5
+      ],
+      [
+        7,
+        45
+      ]
+    ],
+    "n": 117
+  },
+  "test_turev": {
+    "uar": 0.5518772196854389,
+    "f1_macro": 0.5519811978994529,
+    "accuracy": 0.695,
+    "confusion": [
+      [
+        126,
+        20
+      ],
+      [
+        41,
+        13
+      ]
+    ],
+    "n": 200
+  }
+}

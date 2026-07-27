@@ -1,0 +1,38 @@
+{
+  "tag": "ours-hubert-base-ls960",
+  "train_source": "ours",
+  "base_model": "facebook/hubert-base-ls960",
+  "train_size": 1462,
+  "test_ours": {
+    "uar": 0.8961538461538462,
+    "f1_macro": 0.888758867841732,
+    "accuracy": 0.8888888888888888,
+    "confusion": [
+      [
+        54,
+        11
+      ],
+      [
+        2,
+        50
+      ]
+    ],
+    "n": 117
+  },
+  "test_turev": {
+    "uar": 0.5744545915778793,
+    "f1_macro": 0.5059967915255532,
+    "accuracy": 0.515,
+    "confusion": [
+      [
+        65,
+        81
+      ],
+      [
+        16,
+        38
+      ]
+    ],
+    "n": 200
+  }
+}

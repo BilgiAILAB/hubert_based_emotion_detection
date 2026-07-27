@@ -1,0 +1,22 @@
+================ VALIDATION REPORT (label-free) ================
+
+PASS  laughter clips labeled PZ: 100.0% (n=5, needs >=70%)
+WARN  positive-keyword clips labeled PZ: 59.1% (n=88, needs >=60%)
+PASS  negative-keyword clips labeled NG: 84.4% (n=109, needs >=60%)
+WARN  pitch(F0) PZ>NG (Mann-Whitney p=0.837): 0.0% (n=595, needs >=99%)
+PASS  energy(RMS) PZ>NG (Mann-Whitney p=1.96e-06): 100.0% (n=595, needs >=99%)
+PASS  no flips w/o e2v (coverage retention 56%): 100.0% (n=1020, needs >=95%)
+PASS  no flips w/o dim (coverage retention 63%): 100.0% (n=1164, needs >=95%)
+PASS  no flips w/o whisper_ser (coverage retention 69%): 100.0% (n=1270, needs >=95%)
+PASS  no flips w/o text_llm (coverage retention 76%): 100.0% (n=1405, needs >=95%)
+PASS  no flips w/o audio_llm (coverage retention 91%): 100.0% (n=1673, needs >=95%)
+
+8/10 checks passed.
+Interpretation: checks 1-2 are the closest thing to external validation available
+(the event detector and the transcript words are not what the acoustic majority votes on).
+Check 3 is a sanity check (partially circular with the prosody voters). Check 4's flip
+score is structurally easy under the default preset — read its RETENTION numbers instead
+(how much of the labeled set each voter carries). If most checks PASS, the consensus labels are
+defensible as SILVER-STANDARD labels (model-consensus, no human verification) and should
+be described exactly that way in the paper, with the pilot/final kappas reported alongside.
+If several WARN: tighten PRESET to 'strict' and re-run Cells 15-17 (seconds, no GPU).

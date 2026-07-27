@@ -1,0 +1,38 @@
+{
+  "tag": "turev-wav2vec2-large-xlsr-turkish",
+  "train_source": "turev",
+  "base_model": "m3hrdadfi/wav2vec2-large-xlsr-turkish",
+  "train_size": 928,
+  "test_ours": {
+    "uar": 0.6519230769230769,
+    "f1_macro": 0.5883180858550316,
+    "accuracy": 0.6153846153846154,
+    "confusion": [
+      [
+        21,
+        44
+      ],
+      [
+        1,
+        51
+      ]
+    ],
+    "n": 117
+  },
+  "test_turev": {
+    "uar": 0.9599188229325215,
+    "f1_macro": 0.9392909179213211,
+    "accuracy": 0.95,
+    "confusion": [
+      [
+        137,
+        9
+      ],
+      [
+        1,
+        53
+      ]
+    ],
+    "n": 200
+  }
+}

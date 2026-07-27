@@ -1,0 +1,38 @@
+{
+  "tag": "turev-hubert-large-ll60k",
+  "train_source": "turev",
+  "base_model": "facebook/hubert-large-ll60k",
+  "train_size": 928,
+  "test_ours": {
+    "uar": 0.5826923076923076,
+    "f1_macro": 0.5800922874093606,
+    "accuracy": 0.5811965811965812,
+    "confusion": [
+      [
+        37,
+        28
+      ],
+      [
+        21,
+        31
+      ]
+    ],
+    "n": 117
+  },
+  "test_turev": {
+    "uar": 0.8821664129883308,
+    "f1_macro": 0.8266946191474493,
+    "accuracy": 0.845,
+    "confusion": [
+      [
+        117,
+        29
+      ],
+      [
+        2,
+        52
+      ]
+    ],
+    "n": 200
+  }
+}

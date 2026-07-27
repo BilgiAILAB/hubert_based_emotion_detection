@@ -1,0 +1,28 @@
+================ PANEL INTER-RATER RELIABILITY ================
+
+Fleiss' kappa (all 5 voters, PZ/NG/ABSTAIN, full corpus n=5125): 0.031
+Mean percent agreement on clips with >=3 real votes (n=1749): 78.2%
+
+Per-voter abstention (full labeled corpus, n=5125; audio_llm bias-corrected: gap-(-1.125), tau 0.5):
+  e2v          42%   (PZ 1000 / NG 1976)
+  dim          53%   (PZ 648  / NG 1779)
+  whisper_ser  54%   (PZ 895  / NG 1465)
+  text_llm     60%   (PZ 1356 / NG 690)
+  audio_llm    87%   (PZ 455  / NG 199)
+
+Pairwise Cohen's kappa (FULL corpus; clips where both voters cast PZ/NG):
+  e2v         vs dim         : +0.310  (n=1476)
+  e2v         vs whisper_ser : +0.104  (n=1527)
+  e2v         vs text_llm    : +0.083  (n=1208)
+  e2v         vs audio_llm   : +0.363  (n=455)
+  dim         vs whisper_ser : +0.098  (n=1174)
+  dim         vs text_llm    : +0.032  (n=897)
+  dim         vs audio_llm   : +0.251  (n=322)
+  whisper_ser vs text_llm    : +0.090  (n=972)
+  whisper_ser vs audio_llm   : +0.185  (n=342)
+  text_llm    vs audio_llm   : +0.283  (n=332)
+
+Note: the audio-LLM bias-correction constant (pilot median gap = -1.125 logprob units) was
+estimated on the 300-clip pilot and applied to the whole corpus, matching the labeling run.
+An earlier 300-clip pilot reported inflated audio-LLM pairs (0.55-0.60) due to small n (17-20);
+the full-corpus values above (0.25-0.36) are the reliable estimates.

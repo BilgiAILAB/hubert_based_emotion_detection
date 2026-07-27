@@ -1,0 +1,8 @@
+,e2v,dim,whisper_ser,text_llm,audio_llm
+e2v,1.000,+0.310,+0.104,+0.083,+0.363
+dim,+0.310,1.000,+0.098,+0.032,+0.251
+whisper_ser,+0.104,+0.098,1.000,+0.090,+0.185
+text_llm,+0.083,+0.032,+0.090,1.000,+0.283
+audio_llm,+0.363,+0.251,+0.185,+0.283,1.000
+
+"# full labeled corpus; pairwise Cohen kappa on clips where both voters cast PZ/NG; audio_llm bias-corrected (gap+1.125, tau 0.5)"

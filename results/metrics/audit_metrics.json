@@ -1,0 +1,12 @@
+{
+  "test": "expert human audit of classifier-consensus disagreements (unanimous test, n=117)",
+  "model": "ours-mHuBERT-147 (primary)",
+  "disagreements": 8,
+  "model_errors": 5,
+  "label_errors": 3,
+  "ambiguous": 0,
+  "raw":         {"uar": 0.9327, "accuracy": 0.9316, "correct": 109, "confusion": [[60,5],[3,49]]},
+  "adjudicated": {"uar": 0.9577, "accuracy": 0.9573, "correct": 112, "confusion": [[61,3],[2,51]]},
+  "note": "Adjudicated = the 3 human-confirmed label errors relabeled to the (correct) model prediction. UAR and accuracy both reported so the audit result is comparable to the UAR headline (0.933) without mixing metrics.",
+  "unanimous_label_error_floor": 0.0256
+}

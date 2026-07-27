@@ -1,0 +1,20 @@
+MODE=full preset=lenient voters=['e2v', 'dim', 'whisper_ser', 'text_llm', 'audio_llm']
+outcome
+low_agreement         2860
+labeled               1837
+no_speech             1003
+insufficient_votes     404
+rule4_filler            24
+
+Fleiss kappa (all 5 voters, PZ/NG/ABSTAIN, n=5125): 0.031
+Mean percent agreement on clips with >=3 real votes (n=1749): 78.2%
+
+PZ share among labeled: 35.1% -> OUTSIDE the 40/60-60/40 band (Manual §6)
+  Remedy order: (1) revisit CONFIG thresholds / PRESET and re-run Cells 15-16 (CPU-only),
+  (2) balance at training time (augment minority / undersample majority).
+  child: n=1042, PZ share 36.4%
+  therapist: n=795, PZ share 33.5%
+
+QC exports: qc_random10.csv (183) and qc_low_confidence.csv (255)
+            (kept for spot-checks / future human review if ever possible).
+No human labels available -> run the VALIDATION cell (next) for the label-free checks.

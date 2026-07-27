@@ -1,0 +1,38 @@
+{
+  "tag": "ours-wav2vec2-large-xlsr-turkish",
+  "train_source": "ours",
+  "base_model": "m3hrdadfi/wav2vec2-large-xlsr-turkish",
+  "train_size": 1462,
+  "test_ours": {
+    "uar": 0.8884615384615384,
+    "f1_macro": 0.8877076411960133,
+    "accuracy": 0.8888888888888888,
+    "confusion": [
+      [
+        58,
+        7
+      ],
+      [
+        6,
+        46
+      ]
+    ],
+    "n": 117
+  },
+  "test_turev": {
+    "uar": 0.6193556570268899,
+    "f1_macro": 0.5454429377665415,
+    "accuracy": 0.555,
+    "confusion": [
+      [
+        70,
+        76
+      ],
+      [
+        13,
+        41
+      ]
+    ],
+    "n": 200
+  }
+}

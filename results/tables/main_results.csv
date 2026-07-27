@@ -1,0 +1,3 @@
+evaluation,UAR,macro_F1,n
+mHuBERT-147 matrix run (CMD->CMD),0.9327,0.9310,117
+5-fold session-disjoint CV (mean+/-std),0.8729+/-0.0365,,857

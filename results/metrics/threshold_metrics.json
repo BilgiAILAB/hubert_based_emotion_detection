@@ -1,0 +1,10 @@
+{
+  "model": "ours-mHuBERT-147 (primary)",
+  "test": "unanimous test set, n=117 (52 PZ / 65 NG)",
+  "auroc": 0.964,
+  "auprc_pz": 0.951,
+  "auprc_ng": 0.973,
+  "baseline_auprc_pz": 0.444,
+  "baseline_auprc_ng": 0.556,
+  "note": "Threshold-independent metrics; AUPRC baselines are class prevalence. Computed from per-clip P(PZ) via sklearn roc_auc_score / average_precision_score."
+}

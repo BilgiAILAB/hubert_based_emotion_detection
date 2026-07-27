@@ -1,0 +1,32 @@
+{
+  "run": "ours-mHuBERT-147 (primary / cross-corpus matrix)",
+  "model": "/content/drive/MyDrive/CHANGE_ME/finetune_outputs/best_model_ours-mHuBERT-147",
+  "n": 117,
+  "uar": 0.9327,
+  "f1_macro": 0.931,
+  "accuracy": 0.9316,
+  "confusion": [
+    [
+      60,
+      5
+    ],
+    [
+      3,
+      49
+    ]
+  ],
+  "uar_ci95_bootstrap_seed42": [
+    0.883,
+    0.9749
+  ],
+  "per_speaker_uar": {
+    "child": {
+      "n": 72,
+      "uar": 0.9651
+    },
+    "therapist": {
+      "n": 45,
+      "uar": 0.8893
+    }
+  }
+}

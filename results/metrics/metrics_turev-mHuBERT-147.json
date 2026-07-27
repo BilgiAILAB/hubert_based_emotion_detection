@@ -1,0 +1,38 @@
+{
+  "tag": "turev-mHuBERT-147",
+  "train_source": "turev",
+  "base_model": "utter-project/mHuBERT-147",
+  "train_size": 928,
+  "test_ours": {
+    "uar": 0.675,
+    "f1_macro": 0.6666666666666666,
+    "accuracy": 0.6666666666666666,
+    "confusion": [
+      [
+        39,
+        26
+      ],
+      [
+        13,
+        39
+      ]
+    ],
+    "n": 117
+  },
+  "test_turev": {
+    "uar": 0.9657534246575342,
+    "f1_macro": 0.939896622190167,
+    "accuracy": 0.95,
+    "confusion": [
+      [
+        136,
+        10
+      ],
+      [
+        0,
+        54
+      ]
+    ],
+    "n": 200
+  }
+}

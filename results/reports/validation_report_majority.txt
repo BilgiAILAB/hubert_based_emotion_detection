@@ -1,0 +1,14 @@
+========== VALIDATION REPORT (label-free) — MAJORITY tier (preset=default) ==========
+
+PASS  laughter clips labeled PZ: 100.0% (n=5, needs >=70%)
+WARN  positive-keyword clips labeled PZ: 58.5% (n=53, needs >=60%)
+PASS  negative-keyword clips labeled NG: 87.1% (n=62, needs >=60%)
+WARN  pitch(F0) PZ>NG (Mann-Whitney p=0.517): 0.0% (n=594, needs >=99%)
+PASS  energy(RMS) PZ>NG (Mann-Whitney p=3.17e-09): 100.0% (n=594, needs >=99%)
+PASS  no flips w/o e2v         (coverage retention 29%): 100.0% (n=251, needs >=95%)
+PASS  no flips w/o dim         (coverage retention 41%): 100.0% (n=354, needs >=95%)
+PASS  no flips w/o whisper_ser (coverage retention 39%): 100.0% (n=332, needs >=95%)
+PASS  no flips w/o text_llm    (coverage retention 61%): 100.0% (n=524, needs >=95%)
+PASS  no flips w/o audio_llm   (coverage retention 79%): 100.0% (n=676, needs >=95%)
+
+8/10 checks passed.  Load-bearing voter: emotion2vec+ (removing it retains only 29% of labels).

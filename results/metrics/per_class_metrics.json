@@ -1,0 +1,28 @@
+{
+  "NG": {
+    "TP": 60,
+    "FP": 3,
+    "FN": 5,
+    "TN": 49,
+    "precision": 0.952,
+    "recall": 0.923,
+    "specificity": 0.942,
+    "f1": 0.938
+  },
+  "PZ": {
+    "TP": 49,
+    "FP": 5,
+    "FN": 3,
+    "TN": 60,
+    "precision": 0.907,
+    "recall": 0.942,
+    "specificity": 0.923,
+    "f1": 0.925
+  },
+  "macro": {
+    "precision": 0.93,
+    "recall_UAR": 0.933,
+    "f1": 0.931,
+    "note": "macro = unrounded mean of per-class metrics; equals headline UAR 0.933 / macro-F1 0.931 in primary_metrics.json"
+  }
+}

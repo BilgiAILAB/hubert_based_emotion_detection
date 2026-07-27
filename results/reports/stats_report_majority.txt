@@ -1,0 +1,16 @@
+MODE=full preset=default voters=['e2v', 'dim', 'whisper_ser', 'text_llm', 'audio_llm']
+outcome
+low_agreement         3840
+no_speech             1003
+labeled                857
+insufficient_votes     404
+rule4_filler            24
+
+Fleiss kappa (all 5 voters, PZ/NG/ABSTAIN, n=5125): 0.031
+Mean percent agreement on clips with >=3 real votes (n=1749): 78.2%
+
+PZ share among labeled (MAJORITY tier, preset=default): 36.6%  (PZ 314 / NG 543)
+  child:     n=519, PZ share 36.8%
+  therapist: n=338, PZ share 36.4%
+
+QC exports: qc_random10.csv (85), qc_low_confidence.csv (255)

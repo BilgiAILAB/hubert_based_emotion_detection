@@ -1,0 +1,12 @@
+{
+  "test": "label-permutation test on the unanimous test set (n=117)",
+  "model": "ours-mHuBERT-147 (primary)",
+  "observed_uar": 0.9327,
+  "n_permutations": 20000,
+  "seed": 42,
+  "null_mean_uar": 0.500,
+  "null_p95_uar": 0.569,
+  "null_max_uar": 0.690,
+  "p_value": 5.0e-05,
+  "note": "UAR recomputed on 20000 random relabelings; observed UAR exceeds every permutation, so p is at the resolution floor (<1e-4)."
+}
